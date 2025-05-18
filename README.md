@@ -1,7 +1,3 @@
-Here’s a refined version of your `README.md` that improves clarity, grammar, and structure:
-
----
-
 # 📂 Google DocumentsUI App Launcher
 
 This is a minimal Android app that launches the system file explorer (`com.google.android.documentsui`). This is especially useful if your device's default launcher hides the system **Files** app.

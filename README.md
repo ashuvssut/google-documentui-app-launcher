@@ -16,8 +16,16 @@ Android's built-in **Files** app is more powerful than many OEM alternatives —
 
 ## 📽️ Demo
 
- ![Kapture 2025-05-18 at 23 42 05](https://github.com/user-attachments/assets/17a5b6ea-0454-4919-bcf7-b347e7f8e50f)
+<!-- 
 
+Original ![Demo_100](https://github.com/user-attachments/assets/17a5b6ea-0454-4919-bcf7-b347e7f8e50f)
+ 
+75% smaller: ![Demo_75](https://github.com/user-attachments/assets/76c9525d-54a8-43fd-b77b-d78dc0efcd06)
+
+50% smaller:-
+-->
+
+- ![Demo_50](https://github.com/user-attachments/assets/3cd2b97e-fe28-4bb7-ad6e-203983d79936)
 
 ## 📦 Installation
 

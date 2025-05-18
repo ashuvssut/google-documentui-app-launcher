@@ -29,6 +29,6 @@ Original ![Demo_100](https://github.com/user-attachments/assets/17a5b6ea-0454-49
 
 ## 📦 Installation
 
-1. Visit the [Releases](https://github.com/your-username/google-documentui-app-launcher/releases) page.
+1. Visit the [Releases](https://github.com/ashuvssut/google-documentui-app-launcher/releases) page.
 2. Download the latest `APK` file.
 3. Install it on your device.

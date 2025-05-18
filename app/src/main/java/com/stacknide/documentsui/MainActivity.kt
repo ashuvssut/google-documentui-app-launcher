@@ -2,46 +2,28 @@ package com.stacknide.documentsui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.stacknide.documentsui.ui.theme.DocumentsUITheme
+import android.content.ComponentName
+import android.content.Intent
+import android.widget.Toast
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            DocumentsUITheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+
+        // Try to launch DocumentsUI
+        try {
+            val intent = Intent().apply {
+                component = ComponentName(
+                    "com.google.android.documentsui",
+                    "com.android.documentsui.files.FilesActivity"
+                )
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK
             }
+            startActivity(intent)
+            finish() // close this app
+        } catch (e: Exception) {
+            Toast.makeText(this, "Unable to open DocumentsUI", Toast.LENGTH_LONG).show()
+            e.printStackTrace()
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    DocumentsUITheme {
-        Greeting("Android")
     }
 }

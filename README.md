@@ -2,7 +2,7 @@
 
 This is a minimal Android app that launches the system file explorer (`com.google.android.documentsui`). This is especially useful if your device's default launcher hides the system **Files** app.
 
-Android's built-in **Files** app is more powerful than many OEM alternatives — it can access deeper directories, including those under the `Android/` folder, making file management more transparent and flexible.
+Android's built-in **Files** app is more powerful than many OEM alternatives — it can access deeper directories, including those under the `Android/` folder, making file management more transparent and flexible. Copy/Cut/Paste jobs are faster than using any other File Manager
 
 ## What it does?
 
